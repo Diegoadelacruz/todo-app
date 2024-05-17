@@ -5,7 +5,7 @@ const TaskList = props => {
     const { list, setList } = props;
 
     const onClickRemoveItem = e => {
-        const updateList = list.filter(item => item.done);
+        const updateList = list.filter(item => !item.done);
         setList(updateList);
     };
 
