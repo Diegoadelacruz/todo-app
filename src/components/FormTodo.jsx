@@ -16,9 +16,9 @@ const FormTodo = props => {
   };
   return (
     <form onSubmit={handleSubmit}>
+      <h1>Bienvenido Todo-App</h1>
       <div className='todo-list'>
         <div className='file-input'>
-
           <input
             type="text"
             className='text'
@@ -29,7 +29,7 @@ const FormTodo = props => {
             className='button pink'
             disabled={description ? "" : "disabled"}
           >
-            Add
+            Agregar
           </button>
         </div>
       </div>
